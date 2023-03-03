@@ -1,0 +1,333 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+.center-block-main
+{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.header-top
+{
+	padding: 30px 0;
+	border-bottom:1px solid #eee;
+}
+.logo
+{
+	float: left;
+	font-size: 1.375em;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+.contact-basket
+{
+	float: right;
+
+}
+ .contact-basket p
+ {
+ 	float: left;
+ 	font-size: 0.75em;
+ 	font-weight: bold;
+ }
+   .contact-basket p img
+{
+	vertical-align: middle;
+}
+ .header-basket
+ {
+ 	padding: 7px 25px;
+ 	border: 1px solid #eee;
+ 	margin-left: 20px;
+ }
+   .header-basket a
+	{
+		text-transform: uppercase;
+		color: #7e7f84;
+		text-decoration: none;
+		margin-left:20px ;
+	}
+	.header-basket a:hover
+	{
+  		color:#f45a40;
+	}
+ .header-phone
+ {
+ 	padding-top: 8px;
+
+ }
+ .header-bottom
+ {
+padding: 10px 0;
+ }
+ .menu
+ {
+ 	float: left;
+ }
+ .menu li
+ {
+ 	float: left;
+ 	text-transform: uppercase;
+ 	margin-right: 30px;
+ 	font-size: 0.875em;
+ }
+ .menu li a
+ {
+ 	color: #7e7f84;
+ 	text-decoration: none;
+ }
+ .menu li a:hover
+ {
+ 	color:#f45a40;
+ }
+ .search-block
+ {
+ 	float: left;
+ 	margin-top: -3px;
+ }
+  .search-btn
+	{
+		float: left;
+
+	}
+	.search
+	{
+		float: left;
+		font-size: 0.875em;
+		color: #7e7f84;
+		border: none;
+		margin-top:2px ;
+		line-height: 1.4;
+	}
+
+.my-slider
+{
+
+}
+.my-slider ul li
+{
+	position: relative;
+	color: #f45a40;
+}
+.my-slider ul li h2
+{
+	position: absolute;
+	top: 200px;
+	left: 30px;
+	font-size: 3.6875em;
+	font-weight: bold;
+	line-height: 1.1;
+
+}
+.my-slider ul li p
+{
+	position: absolute;
+	top: 350px;
+	left: 30px;
+	font-size: 0.875em;
+	
+	line-height: 1.1;
+
+}
+.unslider-nav
+{
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	top: -50px;
+}
+.block3-main 
+{
+	margin-bottom: 50px;
+}
+	.block3-main article
+	{
+		width: 31.6%;
+		float: left;
+		margin-left: 2.6%;
+
+	}
+	.block3-main article:first-child
+	{
+		margin-left: 0;
+	}
+	.block3-main article img 
+	{
+		display: block;
+		margin: 0 auto 20px auto;
+	}
+	.block3-main article h2
+	{
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 1.375em;
+		margin-bottom: 20px;
+	}
+	.block3-main article p
+	{
+		font-size: 0.875em;
+	}
+	.ftr
+	{
+		background: #2e2d34;
+		padding: 40px 0;
+	}
+	.ftr-block-contect
+	{
+		display: block;
+	}
+		.ftr h2
+		{
+			color: #fff;
+			font-size: 1.325em;
+			font-family: 'Roboto Condensed', sans-serif;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		
+		}
+		.ftr p
+		{
+
+			font-size: 0.875em;
+			margin-bottom: 20px;
+
+		}
+		.ftr h3
+		{
+			font-size: 0.875em;
+			margin-bottom: 5px;
+		}
+		.ftr h3 a
+		{
+			color: #7e7f84;
+			text-decoration: none;
+		}
+		.ftr h3 a:hover
+		{
+			color: #fff;
+			text-decoration: underline;
+		}
+		.ftr a
+		{
+			float: left;
+			padding-right: 5px;
+			display: block;
+		}
+		.ftrmail
+		{
+			width: 100%;
+			text-transform: uppercase;
+			font-size: 0.75em;
+			margin-bottom: 15px;
+			padding: 7px 20px;
+			box-sizing: border-box;
+		}
+		.ftrtext
+		{
+			width: 100%;
+			text-transform: uppercase;
+			font-size: 0.75em;
+			margin-bottom: 15px;
+			padding: 7px 120px;
+			box-sizing: border-box;
+		}
+		.ftrsubmit
+		{
+			text-transform: uppercase;
+			font-size: 0.875em;
+			border: none;
+			background: #f45a40;
+			padding: 7px 20px;
+			color: #fff;
+			cursor: pointer;
+
+		}
